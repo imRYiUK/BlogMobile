@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/gris"
+    tools:context=".MainActivity3">
+
+  <TextView
+      android:id="@+id/titreTextView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="50dp"
+      android:textStyle="bold"
+      android:textColor="@color/black"
+      android:layout_marginBottom="16dp" />
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/auteurTextView"
+      android:layout_marginTop="10dp"
+      android:id="@+id/scrollView2">
+
+    <TextView
+        android:id="@+id/contenuTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp" />
+
+  </ScrollView>
+
+
+  <TextView
+      android:id="@+id/auteurTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/titreTextView"
+      android:textSize="16dp"
+      android:textColor="@color/black"
+      android:layout_marginTop="16dp" />
+
+  <TextView
+      android:id="@+id/dateTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/titreTextView"
+      android:layout_marginTop="1dp"
+      android:textColor="@color/black"
+      android:layout_marginStart="118dp"
+      android:layout_toEndOf="@id/auteurTextView"
+      android:textSize="18dp" />
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/titreTextView"
+      android:layout_marginTop="10dp"
+      android:id="@+id/scrollView"
+      android:layout_toEndOf="@id/auteurTextView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/auteurDateTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          android:textColor="@color/black"
+          android:layout_marginTop="10dp"
+          android:layout_toEndOf="@id/auteurTextView" />
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/black" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <ImageButton
+      android:id="@+id/retourButton"
+      android:layout_width="62dp"
+      android:layout_height="67dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:background="@drawable/border_button"
+      android:src="@drawable/annuler"
+      android:scaleType="fitCenter"
+      android:tint="#FFFFFF"
+      android:padding="8dp"
+      tools:ignore="UseAppTint"
+      android:contentDescription="Bouton Retour"/>
+
+
+</RelativeLayout>
